@@ -1,0 +1,296 @@
+<html>
+
+<head>
+  <base href="https://editalivros.com/portfolio">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Edita Livros</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    header {
+      background: #35424a;
+      color: #ffffff;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #e8491d 3px solid;
+    }
+
+    header a {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+
+    header #branding {
+      float: left;
+    }
+
+    header #branding h1 {
+      margin: 0;
+    }
+
+    header nav {
+      float: right;
+      margin-top: 10px;
+    }
+
+    header .highlight,
+    header .current a {
+      color: #e8491d;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    #main {
+      padding: 30px 0;
+      background: #ffffff;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+
+    .portfolio-item {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .portfolio-item .content {
+      padding: 15px;
+    }
+
+    .portfolio-item h3 {
+      margin-top: 0;
+    }
+
+    .portfolio-item p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .portfolio-item .media {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+
+    .portfolio-item .media a {
+      color: #e8491d;
+      text-decoration: none;
+    }
+
+    .portfolio-item .media a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 20px;
+      margin-top: 20px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Edita</span> Livros</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://editalivros.com">Home</a></li>
+          <li><a href="https://editalivros.com/servicos">Serviços</a></li>
+          <li><a href="https://editalivros.com/sobre">Sobre</a></li>
+          <li class="current"><a href="https://editalivros.com/portfolio">Portfólio</a></li>
+          <li><a href="https://editalivros.com/contato">Contato</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="main">
+    <div class="container">
+      <h2>Nosso Portfólio</h2>
+      <p>Confira alguns dos livros que tivemos o prazer de editar e publicar:</p>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item">
+          <img src="https://s3.amazonaws.com/media.clubedeautores.com.br/cover_images/676041/big_cover_front.png"
+            alt="Capa do livro 'Equilíbrio dos Dons '" width="100" height="auto">
+          <div class="content">
+            <h3><a href="https://www.amazon.com.br/dp/B0CZYR3LHL" target="_blank">Equilíbrio dos Dons  </a>
+            </h3>
+            <p>Aplicações da Parábola dos Talentos: Reflexões e Aplicações da Parábola dos Talentos - Revisitada
+              (Parábolas).</p>
+            <div class="media">
+              <a href="https://www.amazon.com.br/dp/B0CZYR3LHL" target="_blank">Trailer</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="https://m.media-amazon.com/images/I/61SakbUBNpL._SY466_.jpg" alt="Capa do livro 'O Retorno'"
+            width="400" height="300">
+          <div class="content">
+            <h3><a href="https://a.co/d/1YkJMFd" target="_blank">O Retorno</a></h3>
+
+            <p>A Parábola do Filho Pródigo - Revisitada (Parábolas).</p>
+            <div class="media">
+              <a href="https://www.youtube.com/watch?v=cJj7mjx1hoM" target="_blank">Trailer</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="https://m.media-amazon.com/images/I/61bVEryY5CL._SY466_.jpg" alt="Capa do livro 'O Semeador'"
+            width="400" height="300">
+          <div class="content">
+            <h3><a href="https://a.co/d/iUOoe2L" target="_blank">O Semeador</a></h3>
+            <p>A Parábola do Semeador - Revisitada.</p>
+            <div class="media">
+              <a href="https://www.youtube.com/watch?v=29Z6sp22tzo" target="_blank">Trailer</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="https://m.media-amazon.com/images/I/51vmxcLKbZL._SY466_.jpg"
+            alt="Capa do livro 'O PERDÃO: da Dor ao Amor'" width="400" height="300">
+          <div class="content">
+            <h3><a href="https://a.co/d/fJrUMcn" target="_blank">O PERDÃO: da Dor ao Amor</a></h3>
+            <p>Em "O Perdão", Sheila Moss nos guia por uma jornada profunda de fé, cura e transformação. A narrativa
+              segue Clara Alves, uma escritora e pesquisadora de textos religiosos, e Rafael Monteiro,
+              um psicólogo e terapeuta espiritual, enquanto enfrentam seus traumas e encontram a redenção através do
+              perdão.</p>
+
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="https://m.media-amazon.com/images/I/71crQ9ZT2pL._SY466_.jpg" alt="Capa do livro 'POR QUE CONFIAR NA BÍBLIA?: 
+          Uma Investigação Histórica e Teológica'"
+              width="400" height="300">
+          <div class="content">
+            <h3><a href="https://a.co/d/07YqJ7h" target="_blank">POR QUE CONFIAR NA BÍBLIA?: Uma Investigação Histórica e Teológica</a></h3>
+            <p>Por que Confiar na Bíblia? Uma Investigação Histórica e Teológica de Benedicta Ben é um estudo profundo que busca esclarecer as razões pelas quais a Bíblia 
+              continua  sendo uma fonte confiável de verdade e orientação espiritual. </p>
+            
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis</p>
+  </footer>
+
+  <script>
+    // Add hover effect to portfolio items
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    portfolioItems.forEach(item => {
+      item.addEventListener('mouseover', function () {
+        this.style.transform = 'scale(1.05)';
+      });
+      item.addEventListener('mouseout', function () {
+        this.style.transform = 'scale(1)';
+      });
+    });
+
+    // Lazy loading for images
+    document.addEventListener("DOMContentLoaded", function () {
+      let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+      let active = false;
+
+      const lazyLoad = function () {
+        if (active === false) {
+          active = true;
+
+          setTimeout(function () {
+            lazyImages.forEach(function (lazyImage) {
+              if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.classList.remove("lazy");
+
+                lazyImages = lazyImages.filter(function (image) {
+                  return image !== lazyImage;
+                });
+
+                if (lazyImages.length === 0) {
+                  document.removeEventListener("scroll", lazyLoad);
+                  window.removeEventListener("resize", lazyLoad);
+                  window.removeEventListener("orientationchange", lazyLoad);
+                }
+              }
+            });
+
+            active = false;
+          }, 200);
+        }
+      };
+
+      document.addEventListener("scroll", lazyLoad);
+      window.addEventListener("resize", lazyLoad);
+      window.addEventListener("orientationchange", lazyLoad);
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

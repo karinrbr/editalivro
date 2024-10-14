@@ -1,0 +1,236 @@
+<html><head><base href="https://editalivros.com/contato">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Edita Livros</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    header {
+      background: #35424a;
+      color: #ffffff;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #e8491d 3px solid;
+    }
+    header a {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    header #branding {
+      float: left;
+    }
+    header #branding h1 {
+      margin: 0;
+    }
+    header nav {
+      float: right;
+      margin-top: 10px;
+    }
+    header .highlight, header .current a {
+      color: #e8491d;
+      font-weight: bold;
+    }
+    header a:hover {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    #main {
+      padding: 30px 0;
+      background: #ffffff;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .contact-form {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .contact-form h3 {
+      margin-top: 0;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .form-group textarea {
+      height: 100px;
+    }
+    button {
+      background-color: #e8491d;
+      color: #ffffff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333333;
+    }
+    .contact-info {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .contact-info h3 {
+      margin-top: 0;
+    }
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #e8491d;
+      font-size: 24px;
+    }
+    footer {
+      padding: 20px;
+      margin-top: 20px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Edita</span> Livros</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://editalivros.com">Home</a></li>
+          <li><a href="https://editalivros.com/servicos">Serviços</a></li>
+          <li><a href="https://editalivros.com/sobre">Sobre</a></li>
+          <li><a href="https://editalivros.com/portfolio">Portfólio</a></li>
+          <li class="current"><a href="https://editalivros.com/contato">Contato</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="main">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p>Estamos ansiosos para ouvir sobre seu projeto! Preencha o formulário abaixo ou use nossas informações de contato para nos alcançar.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3>Envie uma Mensagem</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto:</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Informações de Contato</h3>
+         
+          <p><i class="fas fa-phone"></i> Telefone: 351 912-485190</p>
+          <p><i class="fas fa-envelope"></i> E-mail: contatoeditalivros@gmail.com</p>
+          <p><i class="fas fa-clock"></i> Horário de Atendimento: Segunda a Sexta, 9h às 18h</p>
+          
+          <div class="social-links">
+            <h4>Siga-nos nas Redes Sociais:</h4>
+            <a href="https://facebook.com/editalivros" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/editalivros" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/editalivros" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/company/editalivros" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis</p>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Here you would typically send the form data to a server
+      // For this example, we'll just log it to the console
+      console.log('Form submitted!');
+      console.log('Name:', document.getElementById('name').value);
+      console.log('Email:', document.getElementById('email').value);
+      console.log('Subject:', document.getElementById('subject').value);
+      console.log('Message:', document.getElementById('message').value);
+      
+      // Clear the form
+      this.reset();
+      
+      // Show a success message
+      alert('Obrigado por sua mensagem! Entraremos em contato em breve.');
+    });
+
+    // Add smooth scrolling to all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add hover effect to social links
+    const socialLinks = document.querySelectorAll('.social-links a');
+    socialLinks.forEach(link => {
+      link.addEventListener('mouseover', function() {
+        this.style.color = '#333333';
+      });
+      link.addEventListener('mouseout', function() {
+        this.style.color = '#e8491d';
+      });
+    });
+  </script>
+</body></html>
