@@ -24,11 +24,9 @@
     header {
       background: #35424a;
       color: #ffffff;
-      padding: 30px 0;
+      padding-top: 30px;
+      min-height: 70px;
       border-bottom: #e8491d 3px solid;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
     header a {
@@ -38,28 +36,20 @@
       font-size: 16px;
     }
 
+    header #branding {
+      float: left;
+    }
+
     header #branding h1 {
       margin: 0;
     }
 
     header nav {
+      float: left; /* Menu à esquerda */
       margin-top: 10px;
     }
 
-    header nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-    }
-
-    header nav ul li {
-      display: inline;
-    }
-
-    header .highlight,
-    header .current a {
+    header .highlight, header .current a {
       color: #e8491d;
       font-weight: bold;
     }
@@ -138,21 +128,9 @@
 
     /* RESPONSIVE DESIGN */
     @media (max-width: 1024px) {
+      /* Para tablets */
       .container {
         width: 90%;
-      }
-
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      header nav {
-        margin-top: 20px;
-      }
-
-      header nav ul {
-        justify-content: flex-start;
       }
 
       .portfolio-item {
@@ -173,6 +151,7 @@
     }
 
     @media (max-width: 768px) {
+      /* Para telemóveis (smartphones) */
       .container {
         width: 95%;
       }
@@ -181,14 +160,14 @@
         text-align: center;
       }
 
-      header nav {
-        margin-top: 20px;
+      header #branding h1 {
+        font-size: 24px;
       }
 
-      header nav ul {
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
+      header nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
       }
 
       .portfolio-item {
@@ -221,18 +200,20 @@
 
 <body>
   <header>
-    <div id="branding">
-      <h1><span class="highlight">Edita</span> Livros</h1>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Edita</span> Livros</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://karinrbr.github.io/editalivros/index.html">Home</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
+          <li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="https://karinrbr.github.io/editalivros/index.html">Home</a></li>
-        <li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
-        <li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
-        <li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
-        <li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
-      </ul>
-    </nav>
   </header>
 
   <section id="main">
@@ -280,16 +261,19 @@
           <img src="https://m.media-amazon.com/images/I/51vmxcLKbZL._SY466_.jpg" alt="Capa do livro 'O Perdão'">
           <div class="content">
             <h3><a href="https://amzn.eu/d/161hzBR">O Perdão: da Dor ao Amor</a></h3>
-            <p>Em "O Perdão", Sheila Moss nos guia por uma jornada profunda de fé, cura e transformação.</p>
+            <p>Em "O Perdão", Sheila Moss nos guia por uma jornada profunda de fé, cura e transformação. A narrativa segue
+              Clara Alves, uma escritora e pesquisadora de textos religiosos, e Rafael Monteiro, um psicólogo e terapeuta espiritual,
+              enquanto enfrentam seus traumas e encontram a redenção através do perdão.</p>
           </div>
         </div>
 
         <div class="portfolio-item">
           <img src="https://m.media-amazon.com/images/I/71crQ9ZT2pL._SY466_.jpg" alt="Capa do livro 'Por que Confiar na Bíblia?'">
           <div class="content">
-            <h3><a href="https://amzn.eu/d/14zysfn"_blank">Por que Confiar na Bíblia?</a></h3>
-            <p>Uma Investigação Histórica e Teológica de Benedicta Ben é um estudo profundo que busca esclarecer as razões
-              pelas quais a Bíblia continua sendo uma fonte confiável de verdade e orientação espiritual.</p>
+            <h3><a href="https://amzn.eu/d/14zysfn" target="_blank">Por que Confiar na Bíblia?</a></h3>
+            <p>Por que Confiar na Bíblia? Uma Investigação Histórica e Teológica de Benedicta Ben é um estudo profundo que busca esclarecer
+              as razões pelas quais a Bíblia continua sendo uma fonte confiável de verdade e orientação espiritual. Este livro é uma ferramenta 
+              indispensável para todos que buscam entender a relevância contínua da Bíblia na formação da identidade e dos valores humanos.</p>
           </div>
         </div>
 
@@ -298,7 +282,7 @@
   </section>
 
   <footer>
-    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis .</p>
+    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis.</p>
   </footer>
 </body>
 
