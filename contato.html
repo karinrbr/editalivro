@@ -1,4 +1,7 @@
-<html><head><base href="https://editalivros.com/contato">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="https://editalivros.com/contato">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Edita Livros</title>
@@ -22,6 +25,10 @@
       padding-top: 30px;
       min-height: 70px;
       border-bottom: #e8491d 3px solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
     header a {
       color: #ffffff;
@@ -36,8 +43,17 @@
       margin: 0;
     }
     header nav {
-      float: right;
       margin-top: 10px;
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    header nav ul li {
+      margin-left: 20px;
     }
     header .highlight, header .current a {
       color: #e8491d;
@@ -118,6 +134,32 @@
       background-color: #e8491d;
       text-align: center;
     }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      header nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header nav ul li {
+        margin: 5px 0;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      button {
+        width: 100%;
+      }
+    }
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -129,13 +171,11 @@
       </div>
       <nav>
         <ul>
-         <li><a href="https://karinrbr.github.io/editalivros/index.html">Home</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
-<li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
-
-          
+          <li><a href="https://karinrbr.github.io/editalivros/index.html">Home</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
+          <li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -172,7 +212,6 @@
         
         <div class="contact-info">
           <h3>Informações de Contato</h3>
-         
           <p><i class="fas fa-phone"></i> Telefone: 351 912-485190</p>
           <p><i class="fas fa-envelope"></i> E-mail: contatoeditalivros@gmail.com</p>
           <p><i class="fas fa-clock"></i> Horário de Atendimento: Segunda a Sexta, 9h às 18h</p>
@@ -197,22 +236,17 @@
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Here you would typically send the form data to a server
-      // For this example, we'll just log it to the console
       console.log('Form submitted!');
       console.log('Name:', document.getElementById('name').value);
       console.log('Email:', document.getElementById('email').value);
       console.log('Subject:', document.getElementById('subject').value);
       console.log('Message:', document.getElementById('message').value);
       
-      // Clear the form
       this.reset();
       
-      // Show a success message
       alert('Obrigado por sua mensagem! Entraremos em contato em breve.');
     });
 
-    // Add smooth scrolling to all links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -223,7 +257,6 @@
       });
     });
 
-    // Add hover effect to social links
     const socialLinks = document.querySelectorAll('.social-links a');
     socialLinks.forEach(link => {
       link.addEventListener('mouseover', function() {
@@ -234,4 +267,5 @@
       });
     });
   </script>
-</body></html>
+</body>
+</html>
