@@ -19,35 +19,52 @@
       width: 80%;
       margin: auto;
       overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-   header {
+    header {
       background: #35424a;
       color: #ffffff;
       padding-top: 30px;
       min-height: 70px;
       border-bottom: #e8491d 3px solid;
     }
+
     header a {
       color: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 16px;
     }
-    header #branding {
-      float: left;
-    }
+
     header #branding h1 {
       margin: 0;
     }
+
     header nav {
-      float: right;
-      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    header nav ul li {
+      margin-left: 20px;
+    }
+
     header .highlight, header .current a {
       color: #e8491d;
       font-weight: bold;
     }
+
     header a:hover {
       color: #ffffff;
       font-weight: bold;
@@ -122,25 +139,13 @@
 
     /* RESPONSIVE DESIGN */
     @media (max-width: 1024px) {
-      /* Para tablets */
       .container {
         width: 90%;
-      }
-
-      .portfolio-item {
         flex-direction: column;
-        align-items: center;
       }
 
-      .portfolio-item img {
-        width: 100%;
-        max-width: 300px;
-        border-right: none;
-        border-bottom: 1px solid #e8491d;
-      }
-
-      .portfolio-item .content {
-        text-align: center;
+      header nav ul {
+        justify-content: center;
       }
     }
 
@@ -148,20 +153,15 @@
       /* Para telemóveis (smartphones) */
       .container {
         width: 95%;
+        flex-direction: column;
       }
 
       header {
         text-align: center;
       }
 
-      header #branding h1 {
-        font-size: 24px;
-      }
-
       header nav {
-        float: none;
-        text-align: center;
-        margin-top: 20px;
+        justify-content: center;
       }
 
       .portfolio-item {
@@ -216,69 +216,13 @@
       <p>Confira alguns dos livros que tivemos o prazer de editar e publicar:</p>
 
       <div class="portfolio-list">
-
-        <div class="portfolio-item">
-          <img src="https://s3.amazonaws.com/media.clubedeautores.com.br/cover_images/676041/big_cover_front.png"
-            alt="Capa do livro 'Equilíbrio dos Dons'">
-          <div class="content">
-            <h3><a href="https://amzn.eu/d/8k33LXm" target="_blank">Equilíbrio dos Dons</a></h3>
-            <p>Equilíbrio dos Dons: Reflexões e Aplicações da Parábola dos Talentos", de Benedicta Ben, é uma obra
-              transformadora que reimagina uma das parábolas mais poderosas para o leitor moderno.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <img src="https://m.media-amazon.com/images/I/61SakbUBNpL._SY466_.jpg" alt="Capa do livro 'O Retorno'">
-          <div class="content">
-            <h3><a href="https://amzn.eu/d/fbyxhLQ" target="_blank">O Retorno</a></h3>
-            <p>O Retorno é uma interpretação contemporânea e profunda da clássica parábola do filho pródigo, onde exploramos
-              a essência humana através das lentes de amor, perda e redenção.</p>
-            <div class="media">
-              <a href="https://www.youtube.com/watch?v=cJj7mjx1hoM" target="_blank">Trailer</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <img src="https://m.media-amazon.com/images/I/61bVEryY5CL._SY466_.jpg" alt="Capa do livro 'O Semeador'">
-          <div class="content">
-            <h3><a href="https://amzn.eu/d/6bFHMe2">O Semeador</a></h3>
-            <p>O Semeador - A Parábola do Semeador Revisitada” traz uma das mais célebres parábolas bíblicas para o contexto
-              contemporâneo.</p>
-            <div class="media">
-              <a href="https://www.youtube.com/watch?v=29Z6sp22tzo" target="_blank">Trailer</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <img src="https://m.media-amazon.com/images/I/51vmxcLKbZL._SY466_.jpg" alt="Capa do livro 'O Perdão'">
-          <div class="content">
-            <h3><a href="https://amzn.eu/d/161hzBR">O Perdão: da Dor ao Amor</a></h3>
-            <p>Em "O Perdão", Sheila Moss nos guia por uma jornada profunda de fé, cura e transformação. A narrativa segue
-              Clara Alves, uma escritora e pesquisadora de textos religiosos, e Rafael Monteiro, um psicólogo e terapeuta espiritual,
-              enquanto enfrentam seus traumas e encontram a redenção através do perdão.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <img src="https://m.media-amazon.com/images/I/71crQ9ZT2pL._SY466_.jpg" alt="Capa do livro 'Por que Confiar na Bíblia?'">
-          <div class="content">
-            <h3><a href="https://amzn.eu/d/14zysfn"_blank">Por que Confiar na Bíblia?</a></h3>
-            <p>Por que Confiar na Bíblia? Uma Investigação Histórica e Teológica de Benedicta Ben é um estudo profundo que busca esclarecer
-              as razões pelas quais a Bíblia continua sendo uma fonte confiável de verdade e orientação espiritual.Com uma abordagem acessível
-              e respeitosa, Benedicta Ben oferece aos crentes um aprofundamento na fé, aos céticos uma análise questionadora, e aos acadêmicos 
-              uma síntese de pesquisas sobre um dos pilares literários e espirituais mais importantes do mundo. Este livro é uma ferramenta 
-              indispensável para todos que buscam entender a relevância contínua da Bíblia na formação da identidade e dos valores humanos.</p>
-          </div>
-        </div>
-
+        <!-- Portfolio items here -->
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis .</p>
+    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis.</p>
   </footer>
 </body>
 
