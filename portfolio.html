@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-  <base href="https://editalivros.com/portfolio">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Edita Livros</title>
@@ -66,14 +65,15 @@
       background: #ffffff;
     }
 
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Aumentei a largura mínima */
-      gap: 20px;
-      padding: 20px 0;
+    .portfolio-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px; /* Espaço entre os itens */
     }
 
     .portfolio-item {
+      display: flex;
+      flex-direction: row;
       background: #fff;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -81,23 +81,21 @@
       transition: all 0.3s ease;
     }
 
-    .portfolio-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
     .portfolio-item img {
-      width: 100%; /* Assegura que a imagem preencha a largura do item */
-      height: 300px; /* Tamanho consistente para todas as imagens */
+      width: 200px;
+      height: auto;
       object-fit: cover;
+      border-right: 1px solid #e8491d;
     }
 
     .portfolio-item .content {
       padding: 15px;
+      flex-grow: 1;
     }
 
     .portfolio-item h3 {
       margin-top: 0;
+      font-size: 20px;
     }
 
     .portfolio-item p {
@@ -107,13 +105,14 @@
 
     .portfolio-item .media {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       margin-top: 10px;
     }
 
     .portfolio-item .media a {
       color: #e8491d;
       text-decoration: none;
+      margin-right: 15px;
     }
 
     .portfolio-item .media a:hover {
@@ -153,32 +152,59 @@
       <h2>Nosso Portfólio</h2>
       <p>Confira alguns dos livros que tivemos o prazer de editar e publicar:</p>
 
-      <div class="portfolio-grid">
+      <div class="portfolio-list">
 
         <div class="portfolio-item">
           <img src="https://s3.amazonaws.com/media.clubedeautores.com.br/cover_images/676041/big_cover_front.png"
-            alt="Capa do livro 'Equilíbrio dos Dons '" width="10" height="auto">
+            alt="Capa do livro 'Equilíbrio dos Dons'">
           <div class="content">
-            <h3><a href="https://www.amazon.com.br/dp/B0CZYR3LHL" target="_blank">Equilíbrio dos Dons  </a>
-            </h3>
-            <p>Equilíbrio dos Dons: Reflexões e Aplicações da Parábola dos Talentos", de Benedicta Ben, é uma obra 
+            <h3><a href="https://www.amazon.com.br/dp/B0CZYR3LHL" target="_blank">Equilíbrio dos Dons</a></h3>
+            <p>Equilíbrio dos Dons: Reflexões e Aplicações da Parábola dos Talentos", de Benedicta Ben, é uma obra
               transformadora que reimagina uma das parábolas mais poderosas para o leitor moderno.</p>
           </div>
         </div>
 
         <div class="portfolio-item">
-          <img src="https://m.media-amazon.com/images/I/61SakbUBNpL._SY466_.jpg" alt="Capa do livro 'O Retorno'"
-            width="400" height="300">
+          <img src="https://m.media-amazon.com/images/I/61SakbUBNpL._SY466_.jpg" alt="Capa do livro 'O Retorno'">
           <div class="content">
             <h3><a href="https://a.co/d/1YkJMFd" target="_blank">O Retorno</a></h3>
-            <p>O Retorno" é uma interpretação contemporânea e profunda da clássica parábola do filho pródigo.</p>
+            <p>O Retorno é uma interpretação contemporânea e profunda da clássica parábola do filho pródigo, onde exploramos
+              a essência humana através das lentes de amor, perda e redenção.</p>
             <div class="media">
               <a href="https://www.youtube.com/watch?v=cJj7mjx1hoM" target="_blank">Trailer</a>
             </div>
           </div>
         </div>
 
-        <!-- Outros itens da lista -->
+        <div class="portfolio-item">
+          <img src="https://m.media-amazon.com/images/I/61bVEryY5CL._SY466_.jpg" alt="Capa do livro 'O Semeador'">
+          <div class="content">
+            <h3><a href="https://a.co/d/iUOoe2L" target="_blank">O Semeador</a></h3>
+            <p>O Semeador - A Parábola do Semeador Revisitada” traz uma das mais célebres parábolas bíblicas para o contexto
+              contemporâneo.</p>
+            <div class="media">
+              <a href="https://www.youtube.com/watch?v=29Z6sp22tzo" target="_blank">Trailer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="https://m.media-amazon.com/images/I/51vmxcLKbZL._SY466_.jpg" alt="Capa do livro 'O Perdão'">
+          <div class="content">
+            <h3><a href="https://a.co/d/fJrUMcn" target="_blank">O Perdão: da Dor ao Amor</a></h3>
+            <p>Em "O Perdão", Sheila Moss nos guia por uma jornada profunda de fé, cura e transformação.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="https://m.media-amazon.com/images/I/71crQ9ZT2pL._SY466_.jpg" alt="Capa do livro 'Por Que Confiar na Bíblia?'">
+          <div class="content">
+            <h3><a href="https://a.co/d/07YqJ7h" target="_blank">Por Que Confiar na Bíblia?</a></h3>
+            <p>Por que Confiar na Bíblia? Uma Investigação Histórica e Teológica de Benedicta Ben é um estudo profundo que
+              busca esclarecer as razões pelas quais a Bíblia continua sendo uma fonte confiável de verdade e orientação
+              espiritual.</p>
+          </div>
+        </div>
 
       </div>
     </div>
