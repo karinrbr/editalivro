@@ -21,33 +21,40 @@
       overflow: hidden;
     }
 
-   header {
+    header {
       background: #35424a;
       color: #ffffff;
       padding-top: 30px;
       min-height: 70px;
       border-bottom: #e8491d 3px solid;
     }
+
     header a {
       color: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 16px;
     }
+
     header #branding {
       float: left;
     }
+
     header #branding h1 {
       margin: 0;
     }
+
     header nav {
       float: right;
       margin-top: 10px;
     }
-    header .highlight, header .current a {
+
+    header .highlight,
+    header .current a {
       color: #e8491d;
       font-weight: bold;
     }
+
     header a:hover {
       color: #ffffff;
       font-weight: bold;
@@ -164,6 +171,16 @@
         margin-top: 20px;
       }
 
+      header nav ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      header nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+
       .portfolio-item {
         flex-direction: column;
         align-items: center;
@@ -187,6 +204,17 @@
 
       .portfolio-item p {
         font-size: 13px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Para smartphones pequenos */
+      .portfolio-item h3 {
+        font-size: 16px;
+      }
+
+      .portfolio-item p {
+        font-size: 12px;
       }
     }
   </style>
@@ -264,9 +292,9 @@
         <div class="portfolio-item">
           <img src="https://m.media-amazon.com/images/I/71crQ9ZT2pL._SY466_.jpg" alt="Capa do livro 'Por que Confiar na Bíblia?'">
           <div class="content">
-            <h3><a href="https://amzn.eu/d/14zysfn"_blank">Por que Confiar na Bíblia?</a></h3>
+            <h3><a href="https://amzn.eu/d/14zysfn" target="_blank">Por que Confiar na Bíblia?</a></h3>
             <p>Por que Confiar na Bíblia? Uma Investigação Histórica e Teológica de Benedicta Ben é um estudo profundo que busca esclarecer
-              as razões pelas quais a Bíblia continua sendo uma fonte confiável de verdade e orientação espiritual.Com uma abordagem acessível
+              as razões pelas quais a Bíblia continua sendo uma fonte confiável de verdade e orientação espiritual. Com uma abordagem acessível
               e respeitosa, Benedicta Ben oferece aos crentes um aprofundamento na fé, aos céticos uma análise questionadora, e aos acadêmicos 
               uma síntese de pesquisas sobre um dos pilares literários e espirituais mais importantes do mundo. Este livro é uma ferramenta 
               indispensável para todos que buscam entender a relevância contínua da Bíblia na formação da identidade e dos valores humanos.</p>
@@ -278,7 +306,7 @@
   </section>
 
   <footer>
-    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis .</p>
+    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis.</p>
   </footer>
 </body>
 
