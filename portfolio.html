@@ -1,7 +1,10 @@
-<html><head><base href="https://editalivros.com/sobre">
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edita Livros - Sobre Nós</title>
+  <title>Portfólio - Edita Livros</title>
   <style>
     body {
       font-family: 'Roboto', Arial, sans-serif;
@@ -11,12 +14,14 @@
       padding: 0;
       background-color: #f4f4f4;
     }
+
     .container {
       width: 80%;
       margin: auto;
       overflow: hidden;
     }
-    header {
+
+   header {
       background: #35424a;
       color: #ffffff;
       padding-top: 30px;
@@ -47,43 +52,66 @@
       color: #ffffff;
       font-weight: bold;
     }
-    #showcase {
-      min-height: 300px;
-      background: url('https://source.unsplash.com/1600x900/?library,books') no-repeat center center/cover;
-      text-align: center;
-      color: #ffffff;
+
+    #main {
+      padding: 30px 0;
+      background: #ffffff;
     }
-    #showcase h1 {
-      margin-top: 100px;
-      font-size: 55px;
-      margin-bottom: 10px;
+
+    .portfolio-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
     }
-    #showcase p {
+
+    .portfolio-item {
+      display: flex;
+      flex-direction: row;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-item img {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-right: 1px solid #e8491d;
+    }
+
+    .portfolio-item .content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+
+    .portfolio-item h3 {
+      margin-top: 0;
       font-size: 20px;
     }
-    #about {
-      padding: 15px;
-      background: #ffffff;
-      margin-top: 20px;
-      margin-bottom: 20px;
+
+    .portfolio-item p {
+      font-size: 14px;
+      color: #666;
     }
-    #team {
-      margin-top: 20px;
-    }
-    .team-member {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    .portfolio-item .media {
       display: flex;
-      align-items: center;
+      justify-content: flex-start;
+      margin-top: 10px;
     }
-    .team-member img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-right: 20px;
+
+    .portfolio-item .media a {
+      color: #e8491d;
+      text-decoration: none;
+      margin-right: 15px;
     }
+
+    .portfolio-item .media a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       padding: 20px;
       margin-top: 20px;
@@ -91,8 +119,79 @@
       background-color: #e8491d;
       text-align: center;
     }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+      /* Para tablets */
+      .container {
+        width: 90%;
+      }
+
+      .portfolio-item {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        max-width: 300px;
+        border-right: none;
+        border-bottom: 1px solid #e8491d;
+      }
+
+      .portfolio-item .content {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* Para telemóveis (smartphones) */
+      .container {
+        width: 95%;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      header #branding h1 {
+        font-size: 24px;
+      }
+
+      header nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .portfolio-item {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #e8491d;
+      }
+
+      .portfolio-item .content {
+        text-align: left;
+        padding: 10px;
+      }
+
+      .portfolio-item h3 {
+        font-size: 18px;
+      }
+
+      .portfolio-item p {
+        font-size: 13px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -101,17 +200,15 @@
       </div>
       <nav>
         <ul>
-         <li><a href="https://karinrbr.github.io/editalivros/index.html">Home</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
-<li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/index.html">Home</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
+          <li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-
 
   <section id="main">
     <div class="container">
@@ -167,9 +264,11 @@
         <div class="portfolio-item">
           <img src="https://m.media-amazon.com/images/I/71crQ9ZT2pL._SY466_.jpg" alt="Capa do livro 'Por que Confiar na Bíblia?'">
           <div class="content">
-            <h3><a href="https://amzn.eu/d/14zysfn" target="_blank">Por que Confiar na Bíblia?</a></h3>
+            <h3><a href="https://amzn.eu/d/14zysfn"_blank">Por que Confiar na Bíblia?</a></h3>
             <p>Por que Confiar na Bíblia? Uma Investigação Histórica e Teológica de Benedicta Ben é um estudo profundo que busca esclarecer
-              as razões pelas quais a Bíblia continua sendo uma fonte confiável de verdade e orientação espiritual. Este livro é uma ferramenta 
+              as razões pelas quais a Bíblia continua sendo uma fonte confiável de verdade e orientação espiritual.Com uma abordagem acessível
+              e respeitosa, Benedicta Ben oferece aos crentes um aprofundamento na fé, aos céticos uma análise questionadora, e aos acadêmicos 
+              uma síntese de pesquisas sobre um dos pilares literários e espirituais mais importantes do mundo. Este livro é uma ferramenta 
               indispensável para todos que buscam entender a relevância contínua da Bíblia na formação da identidade e dos valores humanos.</p>
           </div>
         </div>
@@ -179,7 +278,7 @@
   </section>
 
   <footer>
-    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis.</p>
+    <p>Edita Livros &copy; 2023 | Transformando ideias em livros memoráveis .</p>
   </footer>
 </body>
 
