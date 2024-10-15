@@ -1,4 +1,7 @@
-<!DOCTYPE html><html><head><base href="https://editalivros.com/servicos">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="https://editalivros.com/servicos">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edita Livros - Nossos Serviços</title>
@@ -11,68 +14,93 @@
       padding: 0;
       background-color: #f4f4f4;
     }
+
     .container {
       width: 80%;
       margin: auto;
       overflow: hidden;
     }
+
     header {
       background: #35424a;
       color: #ffffff;
       padding-top: 30px;
       min-height: 70px;
       border-bottom: #e8491d 3px solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     header a {
       color: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 16px;
     }
-    header #branding {
-      float: left;
-    }
+
     header #branding h1 {
       margin: 0;
     }
-    header nav {
-      float: right;
+
+    nav {
       margin-top: 10px;
     }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
     header .highlight, header .current a {
       color: #e8491d;
       font-weight: bold;
     }
+
     header a:hover {
       color: #ffffff;
       font-weight: bold;
     }
+
     #showcase {
       min-height: 300px;
       background: url('https://source.unsplash.com/1600x900/?book,writing') no-repeat center center/cover;
       text-align: center;
       color: #ffffff;
     }
+
     #showcase h1 {
       margin-top: 100px;
       font-size: 55px;
       margin-bottom: 10px;
     }
+
     #showcase p {
       font-size: 20px;
     }
+
     #services {
       margin-top: 20px;
     }
+
     .service-item {
       background: #fff;
       padding: 20px;
       margin-bottom: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
+
     .service-item h3 {
       color: #e8491d;
     }
+
     .service-image {
       width: 100%;
       height: 200px;
@@ -80,12 +108,57 @@
       margin-top: 15px;
       border-radius: 5px;
     }
+
     footer {
       padding: 20px;
       margin-top: 20px;
       color: #ffffff;
       background-color: #e8491d;
       text-align: center;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      #showcase h1 {
+        font-size: 36px;
+      }
+
+      #showcase p {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #showcase h1 {
+        font-size: 28px;
+      }
+
+      #showcase p {
+        font-size: 16px;
+      }
+
+      .service-image {
+        height: 150px;
+      }
     }
   </style>
 </head>
@@ -98,10 +171,10 @@
       <nav>
         <ul>
           <li><a href="https://karinrbr.github.io/editalivros/index.html">Home</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
-<li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
-<li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
+          <li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
+          <li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -125,7 +198,7 @@
           <li>Copyediting</li>
           <li>Revisão final</li>
         </ul>
-        <img class="service-image" src="https://editoraalbatroz.com.br/wp-content/uploads/2021/10/office-gdb15fd611_1920-1024x683.jpg.webp"Editor trabalhando em um manuscrito" width="800" height="400">
+        <img class="service-image" src="https://editoraalbatroz.com.br/wp-content/uploads/2021/10/office-gdb15fd611_1920-1024x683.jpg.webp" alt="Editor trabalhando em um manuscrito">
       </div>
 
       <div class="service-item">
@@ -137,7 +210,7 @@
           <li>Ilustrações sob medida</li>
           <li>Formatação para e-book e impressão</li>
         </ul>
-        <img class="service-image" src="https://almadoslivros.pt/cdn/shop/articles/desafio-design-de-capas-621097_1698x630.jpg?v=1708345316" alt="Designer trabalhando em uma capa de livro" width="800" height="400">
+        <img class="service-image" src="https://almadoslivros.pt/cdn/shop/articles/desafio-design-de-capas-621097_1698x630.jpg?v=1708345316" alt="Designer trabalhando em uma capa de livro">
       </div>
 
       <div class="service-item">
@@ -149,7 +222,7 @@
           <li>Publicação de e-books</li>
           <li>Distribuição para livrarias físicas e online</li>
         </ul>
-        <img class="service-image" src="https://nittv.nit.pt/wp-content/uploads/2021/07/v_18779__83a41903948e91f443099247d51cf0c1.jpg"Livros em uma estante de livraria" width="800" height="400">
+        <img class="service-image" src="https://nittv.nit.pt/wp-content/uploads/2021/07/v_18779__83a41903948e91f443099247d51cf0c1.jpg" alt="Livros em uma estante de livraria">
       </div>
 
       <div class="service-item">
@@ -161,7 +234,7 @@
           <li>Organização de eventos de lançamento</li>
           <li>Campanhas de publicidade direcionadas</li>
         </ul>
-        <img class="service-image" src="https://www.adazing.com/wp-content/uploads/2024/01/book-social-media-768x432-1.webp" alt="Pessoa promovendo um livro em mídias sociais" width="800" height="400">
+        <img class="service-image" src="https://www.adazing.com/wp-content/uploads/2024/01/book-social-media-768x432-1.webp" alt="Pessoa promovendo um livro em mídias sociais">
       </div>
     </div>
   </section>
@@ -175,7 +248,6 @@
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
         });
@@ -194,11 +266,11 @@
     serviceItems.forEach(item => {
       item.addEventListener('mouseover', function() {
         this.style.transform = 'scale(1.05)';
-        this.style.transition = 'all 0.3s ease-in-out';
       });
       item.addEventListener('mouseout', function() {
         this.style.transform = 'scale(1)';
       });
     });
   </script>
-</body></html>
+</body>
+</html>
