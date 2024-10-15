@@ -28,22 +28,27 @@
       color: #ffffff;
       padding: 15px 0;
       border-bottom: #e8491d 3px solid;
+      position: relative;
+    }
+
+    header #branding {
+      float: left;
     }
 
     header #branding h1 {
       margin: 0;
       font-size: 24px;
-      text-align: center;
     }
 
     header nav {
+      float: right;
       margin-top: 10px;
-      text-align: center;
     }
 
     header nav ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     header nav ul li {
@@ -126,11 +131,24 @@
       .container {
         width: 90%;
       }
+
+      header nav {
+        float: none;
+        text-align: right;
+        margin-top: 0;
+      }
     }
 
     @media (max-width: 768px) {
       header #branding h1 {
         font-size: 22px;
+        text-align: center;
+      }
+
+      header nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
       }
 
       header nav ul li {
@@ -247,7 +265,7 @@
         <div class="portfolio-item">
           <img src="https://m.media-amazon.com/images/I/71crQ9ZT2pL._SY466_.jpg" alt="Capa do livro 'Por que Confiar na Bíblia?'">
           <div class="content">
-            <h3><a href="https://amzn.eu/d/5GtyZFH">Por que Confiar na Bíblia?</a></h3>
+            <h3><a href="https://amzn.eu/d/14zysfn" target="_blank">Por que Confiar na Bíblia?</a></h3>
             <p>Por que Confiar na Bíblia? oferece uma análise detalhada e criteriosa sobre as escrituras, investigando sua
               credibilidade, a relevância histórica e as verdades eternas presentes em seus textos sagrados.</p>
             <div class="media">
