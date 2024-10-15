@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
+<html><head><base href="https://editalivros.com/sobre">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Edita Livros</title>
+  <title>Edita Livros - Sobre Nós</title>
   <style>
     body {
       font-family: 'Roboto', Arial, sans-serif;
@@ -14,13 +11,11 @@
       padding: 0;
       background-color: #f4f4f4;
     }
-
     .container {
       width: 80%;
       margin: auto;
       overflow: hidden;
     }
-
     header {
       background: #35424a;
       color: #ffffff;
@@ -28,107 +23,67 @@
       min-height: 70px;
       border-bottom: #e8491d 3px solid;
     }
-
     header a {
       color: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 16px;
     }
-
     header #branding {
       float: left;
     }
-
     header #branding h1 {
       margin: 0;
     }
-
     header nav {
-      float: left;
+      float: right;
       margin-top: 10px;
     }
-
-    header nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    header nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-
     header .highlight, header .current a {
       color: #e8491d;
       font-weight: bold;
     }
-
     header a:hover {
       color: #ffffff;
       font-weight: bold;
     }
-
-    #main {
-      padding: 30px 0;
-      background: #ffffff;
+    #showcase {
+      min-height: 300px;
+      background: url('https://source.unsplash.com/1600x900/?library,books') no-repeat center center/cover;
+      text-align: center;
+      color: #ffffff;
     }
-
-    .portfolio-list {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
+    #showcase h1 {
+      margin-top: 100px;
+      font-size: 55px;
+      margin-bottom: 10px;
     }
-
-    .portfolio-item {
-      display: flex;
-      flex-direction: row;
-      background: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-
-    .portfolio-item img {
-      width: 200px;
-      height: auto;
-      object-fit: cover;
-      border-right: 1px solid #e8491d;
-    }
-
-    .portfolio-item .content {
-      padding: 15px;
-      flex-grow: 1;
-    }
-
-    .portfolio-item h3 {
-      margin-top: 0;
+    #showcase p {
       font-size: 20px;
     }
-
-    .portfolio-item p {
-      font-size: 14px;
-      color: #666;
+    #about {
+      padding: 15px;
+      background: #ffffff;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
-
-    .portfolio-item .media {
+    #team {
+      margin-top: 20px;
+    }
+    .team-member {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       display: flex;
-      justify-content: flex-start;
-      margin-top: 10px;
+      align-items: center;
     }
-
-    .portfolio-item .media a {
-      color: #e8491d;
-      text-decoration: none;
-      margin-right: 15px;
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
     }
-
-    .portfolio-item .media a:hover {
-      text-decoration: underline;
-    }
-
     footer {
       padding: 20px;
       margin-top: 20px;
@@ -136,91 +91,25 @@
       background-color: #e8491d;
       text-align: center;
     }
-
-    /* RESPONSIVE DESIGN */
-    @media (max-width: 1024px) {
-      /* Para tablets */
-      .container {
-        width: 90%;
-      }
-
-      header nav ul {
-        display: flex;
-        flex-direction: column;
-      }
-
-      header nav ul li {
-        margin: 10px 0;
-      }
-
-      .portfolio-item {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .portfolio-item img {
-        width: 100%;
-        max-width: 300px;
-        border-right: none;
-        border-bottom: 1px solid #e8491d;
-      }
-
-      .portfolio-item .content {
-        text-align: center;
-      }
-    }
-
-    @media (max-width: 768px) {
-      /* Para telemóveis (smartphones) */
-      .container {
-        width: 95%;
-      }
-
-      header {
-        text-align: center;
-      }
-
-      header #branding h1 {
-        font-size: 24px;
-      }
-
-      header nav {
-        float: none;
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      header nav ul {
-        display: inline-block;
-      }
-
-      .portfolio-item {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .portfolio-item img {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid #e8491d;
-      }
-
-      .portfolio-item .content {
-        text-align: left;
-        padding: 10px;
-      }
-
-      .portfolio-item h3 {
-        font-size: 18px;
-      }
-
-      .portfolio-item p {
-        font-size: 13px;
-      }
-    }
   </style>
 </head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Edita</span> Livros</h1>
+      </div>
+      <nav>
+        <ul>
+         <li><a href="https://karinrbr.github.io/editalivros/index.html">Home</a></li>
+<li><a href="https://karinrbr.github.io/editalivros/servicos.html">Serviços</a></li>
+<li><a href="https://karinrbr.github.io/editalivros/sobre.html">Sobre</a></li>
+<li><a href="https://karinrbr.github.io/editalivros/portfolio.html">Portfólio</a></li>
+<li class="current"><a href="https://karinrbr.github.io/editalivros/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 <body>
   <header>
